@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>測驗</title>
+        <style>
+            button{
+                font-size:25px;
+                margin-right:10px;
+            }
+            p{
+                font-size: 25px;
+                display: inline-block;
+                margin-right:10px;
+            }
+            img{
+                height: 200px;
+                display: block;
+                margin-top:50px;
+            }
+        </style>
+    </head>
+    <body>
+        
+       
+        <button onclick="
+            console.log(
+            `目前購物車總額:
+            ${number}`
+                )">購物車總額</button>
+                       <!--模板字串可直接換行不用加\n-->
+        <button onclick="
+        console.log('已清空購物車');
+        number=0
+        console.log(number)
+        ">清空購物車</button>
+
+        <img src="product_images/product_image1.jpg">
+        <p>$100</p>
+        <button onclick="
+            number=number+100;  //亦可簡寫寫成 number+=100; 加減乘除都適用;++ --則是只適用+-1
+            console.log('目前購物車總額:'+number);
+            ">加入購物車</button>
+
+        <img src="product_images/product_image2.jpg">
+        <p>$200</p>
+        <button onclick="
+        number+=200;
+        console.log('目前購物車總額:'+number);
+        ">加入購物車</button>
+        
+
+        <script>
+           
+
+
+        </script>
+    </body>
+</html>
